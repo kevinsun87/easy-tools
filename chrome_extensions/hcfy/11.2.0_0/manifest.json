@@ -1,0 +1,102 @@
+{
+   "action": {
+      "default_icon": "logodark.png",
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "b.js"
+   },
+   "commands": {
+      "_execute_action": {
+         "suggested_key": {
+            "default": "Ctrl+Q",
+            "mac": "MacCtrl+Q"
+         }
+      },
+      "hoverTranslate": {
+         "description": "__MSG_commonds_hoverTranslate__"
+      },
+      "page": {
+         "description": "__MSG_commonds_page__"
+      },
+      "pageSwitchMode": {
+         "description": "__MSG_commonds_pageSwitchMode__"
+      },
+      "panel": {
+         "description": "__MSG_commonds_panel__",
+         "global": true,
+         "suggested_key": {
+            "default": "Ctrl+Shift+1"
+         }
+      },
+      "play": {
+         "description": "__MSG_commonds_play__"
+      },
+      "screenshot": {
+         "description": "__MSG_commonds_screenshot__"
+      },
+      "switchWeb": {
+         "description": "__MSG_commonds_switchWeb__"
+      },
+      "translate": {
+         "description": "__MSG_commands_translate__",
+         "suggested_key": {
+            "default": "Alt+A"
+         }
+      },
+      "translateWithPopup": {
+         "description": "__MSG_commonds_translateWithPopup__",
+         "suggested_key": {
+            "default": "Alt+S"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "708.js", "316.js", "180.js", "122.js", "209.js", "224.js", "557.js", "743.js", "408.js", "763.js", "579.js", "620.js", "c.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   }, {
+      "all_frames": true,
+      "js": [ "708.js", "316.js", "557.js", "743.js", "544.js", "579.js", "ca.js" ],
+      "match_about_blank": true,
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+   },
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "ruleset",
+         "path": "net_request_rules.json"
+      } ]
+   },
+   "default_locale": "zh_CN",
+   "description": "__MSG_description__",
+   "differential_fingerprint": "1.698f2f5a903ee57f9ac0e2b83ef614478131de140afc0e52ffad95cbf4b71247",
+   "homepage_url": "https://hcfy.ai",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "logodark.png",
+      "16": "logodark.png",
+      "48": "logodark.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC28U3at5pX9CdXpey4QOxy5tpKRQQ+R3IXAaj8NPqT4pQh9X0jpX7Cc4w8SSrVph+m43e9T72B8NEjc9km4boLuxshHVnTGi7HLlQpPQV10BM2GeNMxQDkK5ca3oL6gVMMNGnq+PJDygweV1yMfcsJlLL/zdmrZ5CXADHBZ2lUbwIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "110",
+   "name": "__MSG_name__",
+   "omnibox": {
+      "keyword": "hcfy"
+   },
+   "optional_permissions": [ "notifications", "background" ],
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "settings.html"
+   },
+   "permissions": [ "contextMenus", "storage", "clipboardWrite", "clipboardRead", "webRequest", "alarms", "offscreen", "declarativeNetRequestWithHostAccess", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "11.2.0",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "normalize.css", "cropper.css", "blueprint.css", "blueprint-select.css", "youdao.ico", "hs.png", "baidu.ico", "google.ico", "gemini.svg", "deepl.png", "alilogo.png", "bing.ico", "qq.ico", "sogou.ico", "xiaoyilogo.png", "chatgpt.jpg", "yandex.png", "logo.png", "logodark.png", "logowhite36.png", "pdf-viewer/*", "panel.html", "708.js", "316.js", "180.js", "122.js", "63.js", "557.js", "743.js", "408.js", "763.js", "544.js", "869.js", "pn.css", "pn.js" ]
+   } ]
+}

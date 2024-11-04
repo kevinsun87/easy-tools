@@ -1,0 +1,1 @@
+let e=new Audio;function t(t,u,n="功德+1"){if(u=u||0,e.src=`./app/muyu/muyu${u}.mp3`,e.play(),!t)return;const o=document.createElement("div");o.textContent=n||"功德+1",o.setAttribute("class","muyu-record"),t.appendChild(o),setTimeout((()=>{t.removeChild(o)}),700)}export{t as knckClick};

@@ -1,0 +1,47 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/128-gray.png",
+         "16": "icons/16-gray.png",
+         "48": "icons/48-gray.png"
+      },
+      "default_popup": "popups/not-found.html",
+      "default_title": "Vue DevTools"
+   },
+   "background": {
+      "service_worker": "dist/background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "dist/prepare.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start",
+      "world": "MAIN"
+   }, {
+      "js": [ "dist/devtools-overlay.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_idle"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "description": "DevTools browser extension for Vue.js",
+   "devtools_page": "pages/devtools-background.html",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "icons/128-beta.png",
+      "16": "icons/16-beta.png",
+      "48": "icons/48-beta.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmhvQ/QlXgtm55lPiK81buwCs+w+ZXTxQ9vgdOiDIkPX2c+NXNDTv5JSnSAdZP3Ogbg1M6P2wXFlgd3X58fcK7c4IH/YySqtSliORgsUcgZIcTi3DIMk6lcCdzvc23zOCV/sKIIG9xBzcw+wJQkeg2E+XjPi8ZG9Gy7Q8PfQXeLqaX4NvasEx0suTPfunLKWMkg9cOU9pmq27uKMpWhiTL8ojm5+Z2KnjlHxnP57DnbtprrTjNsYTqIfJIv4DD1TH09Um3taL2J/SpEVBrvLvXh6l/SrjqVeDs2mFlFU/VmngXZnqJlRta4+aVFNures3fE5cR7poQe5GyC0oP8S/7wIDAQAB",
+   "manifest_version": 3,
+   "name": "Vue.js devtools (beta)",
+   "permissions": [ "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "7.0.0.12",
+   "version_name": "7.0.0 beta 12",
+   "web_accessible_resources": [ {
+      "extension_ids": [  ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "dist/*", "client/*", "overlay/*", "pages/*" ]
+   } ]
+}

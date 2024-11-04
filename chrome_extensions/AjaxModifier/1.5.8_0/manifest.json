@@ -1,0 +1,28 @@
+{
+   "action": {
+   },
+   "background": {
+      "service_worker": "service_worker.js"
+   },
+   "content_security_policy": {
+   },
+   "description": "To modify ajax responses on any page",
+   "devtools_page": "devtools.html",
+   "host_permissions": [ "http://*/", "https://*/" ],
+   "icons": {
+      "128": "images/128.png",
+      "16": "images/16_gray.png",
+      "32": "images/32_gray.png",
+      "48": "images/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArehYDwKuxBf8YWAPPPihOpIp4Yu0XA1hQpXaPwGcDazpWs3rSKpIC3jLuzZb6dlaQ1gZn/vketzbCqm8Fnx3QbFO+/EXw6y/wSUpHlx8D4jH71n4nGWD39m9FjP+F6tqJ1dybbyIggagImFuSh6kkJQCzzTKD3ftrAymhjXdbr8Fx61Oc/yFv7penl44ZjkC0GIs8OcY6h85HG/q5/XSebjVJz7m4m8G3motPDyoiSwdGPGrXV7fuwhIsUUB/27PoUUjrSEIjrL4R9jzSj55IY/k0/Phadc7u4nBkZBmwXuLmTDOU8UpQJXeSz9pAC4zo2qrT5sj93YetmPmaGx2IwIDAQAB",
+   "manifest_version": 3,
+   "name": "Ajax Modifier",
+   "permissions": [ "storage", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.8",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "pageScripts/defaultSettings.js", "pageScripts/main.js", "iframe/index.html" ]
+   } ]
+}

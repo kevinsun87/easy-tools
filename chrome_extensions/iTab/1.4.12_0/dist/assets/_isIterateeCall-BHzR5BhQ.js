@@ -1,0 +1,1 @@
+import{s as r,o as s,i as n}from"./hasIn-y6DbaUwA.js";import{k as t,A as a,y as o,B as i}from"./todo-nv2WtoEp.js";function e(t,a){return r(s(t,a,n),t+"")}function f(r,s,n){if(!t(n))return!1;var e=typeof s;return!!("number"==e?a(n)&&o(s,n.length):"string"==e&&s in n)&&i(n[s],r)}export{e as b,f as i};

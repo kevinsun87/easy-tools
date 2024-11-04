@@ -1,0 +1,1 @@
+import{s as o}from"./main-DJB5iAKQ.js";import{g as e}from"./getUrlQuery-B5eVMc1S.js";import"./modulepreload-polyfill-Dqv5PPZA.js";import"./todo-nv2WtoEp.js";import"./index-CyyLRP8W.js";import"./localforage-BVRgvwJc.js";import"./getAudio-D_HGGnT2.js";const p=e();p.open&&o({component:p.open,insetType:""});

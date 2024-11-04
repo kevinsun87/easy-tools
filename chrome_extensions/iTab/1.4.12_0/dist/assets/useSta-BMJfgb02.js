@@ -1,0 +1,1 @@
+import{b as s}from"./baseRequest-CU9cTnaC.js";import"./todo-nv2WtoEp.js";import"./index-CyyLRP8W.js";import"./userInfo-CZAB7rZN.js";import"./localforage-BVRgvwJc.js";import"./version-DYnJBHiW.js";const t=(t={})=>s.get("/stat/engine",{params:t}),o=(t={})=>s.get("/stat/userHm",{params:t,withCredentials:!0});export{o as statUserAnalyseApi,t as useStatisticsApi};

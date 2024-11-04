@@ -1,0 +1,27 @@
+{
+   "action": {
+      "default_icon": "icons/icon_32.png",
+      "default_title": "Measure-it"
+   },
+   "background": {
+      "service_worker": "bg.js",
+      "type": "module"
+   },
+   "description": "Draw a ruler across any webpage to check the width, height, or alignment of page elements in pixels.",
+   "icons": {
+      "128": "icons/icon_128.png",
+      "32": "icons/icon_32.png",
+      "48": "icons/icon_48.png",
+      "64": "icons/icon_64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAye+RdC2gz2AYsRLPAAP8HPIu77l0snAItyqXoupLDHyta1peeDy7AQJIIgm2iLGRFr4Yph8v985KoIoo5isZ8vLTyCkPuo/kY3Pz3DSpF1oh2xYDXkfh0wxV5FTkszsG8vGNOoAEKw0cYl+CJkS1LABEk1iXrClMsyu4IibJTi1fcJ6sqtyxzA3OiX81H4LQES4jYovwXFVfzddKxUu+TeeRriY+wYASVMct+ygL9BTn7X76DENIhWeg7L+mbgm8DKVBDATf97gBQmh9j8msr0o9XaCTn5TOL8pWQ3IBnP/AbuCAGwYDA2FcVEXsrgGvFWbDfb9XMQUobHFJQur6IwIDAQAB",
+   "manifest_version": 3,
+   "name": "Measure-it",
+   "options_ui": {
+      "browser_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "activeTab", "storage", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0.0"
+}

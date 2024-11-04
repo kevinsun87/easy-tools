@@ -1,0 +1,46 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/128-gray.png",
+         "16": "icons/16-gray.png",
+         "48": "icons/48-gray.png"
+      },
+      "default_popup": "popups/not-found.html",
+      "default_title": "Vue Devtools"
+   },
+   "background": {
+      "service_worker": "build/service-worker.js"
+   },
+   "content_scripts": [ {
+      "js": [ "build/hook.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "build/detector.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_idle"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "description": "This version is provided for legacy users and will not be updated in the future.",
+   "devtools_page": "devtools-background.html",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmNY8v3SeF1voM+zjwEIainERKQtCAMtjNKbdApw60/8RV9XbCBvaDhTSA35SlRAOAFpwe8o3yn3eX2+1zQWHT8eKnMa0x1CrsV9v3/eNIFIlYiFeXThjjHujoHGRXZp9vh6yxFqnI+Y6m2cGIhgfWi28CdWyf+Q41ueyJ1OznszJpvK4z4RYQWqw2UKrebh9oRrEojXYlW2eNrT8JaulSeLqAUkhBBSPxXDXjE4XCMd+4GdNP4yAq2rcfSKtpKZ9vB/nmrwx0gDPkiMgliLu4Bn/iwbPvFw1Lj3BvoM0GR7hkpj7L266OHswC31TDzvnw27CcBFVrJQO10sE0sUsYQIDAQAB",
+   "manifest_version": 3,
+   "name": "Vue.js devtools (v5)",
+   "permissions": [ "storage", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "5.3.4",
+   "version_name": "5.3.4",
+   "web_accessible_resources": [ {
+      "extension_ids": [  ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "devtools.html", "devtools-background.html", "build/backend.js", "build/proxy.js", "build/hook-exec.js", "build/detector-exec.js" ]
+   } ]
+}

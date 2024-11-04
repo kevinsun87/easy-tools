@@ -1,0 +1,1 @@
+import{b as a}from"./baseRequest-CU9cTnaC.js";const t=(t={})=>a.get("/itab/version",{params:t}),e=(t={})=>a.get("/itab/defaultNavConfig",{params:t,timeout:2e3}),s=(t={})=>a.get("/itab/defaultUnionConfig",{params:t,timeout:2e3});export{s as a,t as b,e as g};
